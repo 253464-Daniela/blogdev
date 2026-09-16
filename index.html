@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Portafolio y blog de desarrollo web de Mich: proyectos, artículos técnicos y experiencia.">
+  <title>Mich · Desarrollador y Blog</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">~/mich</a>
+
+      <ul class="nav-list" id="site-nav">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a tema claro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-intro">
+          <p class="eyebrow">&gt;$ whoami</p>
+          <h1 class="hero-title">
+            Estudiante de TI.
+            <span class="hero-name">Mich</span>
+          </h1>
+          <p class="hero-lead">
+            Me gusta el diseño, el desarrollo movil y aprender cosas nuevas.
+          </p>
+          <ul class="tech-badges" aria-label="Tecnologías core">
+            <li class="tech-badge">HTML5</li>
+            <li class="tech-badge">CSS3</li>
+            <li class="tech-badge">JavaScript</li>
+            <li class="tech-badge">Node.js</li>
+            <li class="tech-badge">Git</li>
+            <li class="tech-badge">REST APIs</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+            <a class="btn btn-ghost" href="blog.html">Leer el blog</a>
+          </div>
+        </div>
+
+        <aside class="contact-banner" aria-label="Contacto">
+          <span class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponible para nuevos proyectos
+          </span>
+
+          <h2 class="banner-title">¿Trabajamos juntos?</h2>
+          <p class="banner-text">
+            Escríbeme o conecta por redes. Siempre respondo.
+          </p>
+
+          <button
+            id="copy-email-btn"
+            class="copy-btn"
+            type="button"
+            data-email="zandy7805@gmail.com"
+            aria-label="Copiar correo zandy7805@gmail.com"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="copy-label">zandy7805@gmail.com</span>
+          </button>
+
+          <div class="social-links">
+            <a class="social-link" href="https://github.com/253464-Daniela" rel="noopener noreferrer" target="_blank">GitHub</a>
+            <a class="social-link" href="https://www.linkedin.com/in/daniela-michell-zúñiga-monterrosa-186a79348/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+            <a class="social-link" href="mailto:zandy7805@gmail.com">Email</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-header">
+        <p class="eyebrow">01 · sobre mí</p>
+        <h2 class="section-title">Quién soy y qué hago</h2>
+      </div>
+
+      <div class="about-text">
+        <h3 class="about-heading">Mi enfoque técnico</h3>
+        <p>
+          Creo que el buen software se diseña antes de escribirse. Aplico
+          arquitectura limpia y separación de responsabilidades para que cada
+          pieza sea fácil de leer, probar y evolucionar sin derribar la casa.
+        </p>
+        <p>
+          Priorizo las buenas prácticas: código revisado, convenciones claras
+          y pruebas que respaldan cada cambio. Lo que no se puede medir, no se
+          puede mejorar.
+        </p>
+        <p>
+          Automatizo todo lo que se repite. Pipelines de CI/CD que compilan,
+          testean y despliegan sin fricción, para que entregar valor sea un
+          hábito y no un evento.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <p class="skill-card-code">&gt;_ 01</p>
+          <h3 class="skill-card-title">Frontend</h3>
+          <ul class="skill-tags">
+            <li class="tech-badge">HTML5</li>
+            <li class="tech-badge">CSS3</li>
+            <li class="tech-badge">JavaScript</li>
+            <li class="tech-badge">Accesibilidad</li>
+            <li class="tech-badge">Rendimiento</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <p class="skill-card-code">&gt;_ 02</p>
+          <h3 class="skill-card-title">Backend</h3>
+          <ul class="skill-tags">
+            <li class="tech-badge">Node.js</li>
+            <li class="tech-badge">REST APIs</li>
+            <li class="tech-badge">Bases de datos</li>
+            <li class="tech-badge">Auth</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <p class="skill-card-code">&gt;_ 03</p>
+          <h3 class="skill-card-title">DevOps / Automatización</h3>
+          <ul class="skill-tags">
+            <li class="tech-badge">Git</li>
+            <li class="tech-badge">CI/CD</li>
+            <li class="tech-badge">Testing</li>
+            <li class="tech-badge">Deploy</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <p class="skill-card-code">&gt;_ 04</p>
+          <h3 class="skill-card-title">Herramientas</h3>
+          <ul class="skill-tags">
+            <li class="tech-badge">VS Code</li>
+            <li class="tech-badge">Terminal</li>
+            <li class="tech-badge">npm</li>
+            <li class="tech-badge">Figma</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <p class="eyebrow">02 · proyectos</p>
+        <h2 class="section-title">Cosas que he construido</h2>
+        <p class="section-lead">
+          Selección de proyectos donde aplico arquitectura limpia, buenas
+          prácticas y automatización.
+        </p>
+      </div>
+      <div id="projects-grid"></div>
+    </section>
+
+    <section id="latest-posts" class="section container">
+      <div class="section-header">
+        <p class="eyebrow">03 · desde el blog</p>
+        <h2 class="section-title">Últimos artículos</h2>
+        <p class="section-lead">
+          Los dos posts más recientes. Todo el contenido en el blog.
+        </p>
+      </div>
+      <div id="latest-posts-list"></div>
+      <a class="btn btn-ghost" href="blog.html">Ver todos los artículos</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Mich · constancia &amp; café</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

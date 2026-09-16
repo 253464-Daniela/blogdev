@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Blog técnico de Mich: artículos sobre desarrollo web, CSS, JavaScript y más.">
+  <title>Blog · Mich</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/blog.js" defer></script>
+</head>
+<body data-page="blog">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">~/mich</a>
+
+      <ul class="nav-list" id="site-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#projects">Proyectos</a></li>
+        <li><a href="blog.html" class="is-active" aria-current="page">Blog</a></li>
+      </ul>
+
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a tema claro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container-narrow">
+      <p class="eyebrow">&gt;$ cat articulos.md</p>
+      <h1 class="hero-title">Blog</h1>
+      <p class="hero-lead">
+        Notas, tutoriales y reflexiones sobre el oficio de desarrollar software.
+      </p>
+    </section>
+
+    <section id="posts-list" class="section container-narrow" aria-label="Listado de artículos"></section>
+
+    <section id="post-content" class="section container-narrow" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Mich · constancia &amp; café</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

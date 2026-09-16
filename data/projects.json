@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "TaskFlow",
+    "problem": "El equipo perdía visibilidad del estado de las tareas y los pendientes se estancaban sin responsables claros.",
+    "solution": "Tablero kanban en el navegador con arrastrar y soltar, persistencia en localStorage y filtros por etiqueta.",
+    "tags": ["HTML5", "CSS3", "JavaScript", "LocalStorage"],
+    "githubUrl": "https://github.com/mich/taskflow",
+    "demoUrl": "https://mich.dev/demos/taskflow"
+  },
+  {
+    "id": 2,
+    "title": "Notas API",
+    "problem": "Tomar notas en distintas apps fragmentaba la información y no había forma de consultarlas de manera programática.",
+    "solution": "API REST minimalista con CRUD completo, validación de datos y autenticación por token.",
+    "tags": ["Node.js", "Express", "REST", "SQLite"],
+    "githubUrl": "https://github.com/mich/notas-api",
+    "demoUrl": "#"
+  },
+  {
+    "id": 3,
+    "title": "DevBlog Engine",
+    "problem": "Publicar artículos requería un CMS pesado para un sitio que solo necesita texto y código.",
+    "solution": "Motor de blog estático que inyecta los posts desde JSON, con resaltado de código y búsqueda ligera.",
+    "tags": ["HTML5", "JavaScript", "JSON", "CI/CD"],
+    "githubUrl": "https://github.com/mich/devblog-engine",
+    "demoUrl": "#"
+  }
+]
