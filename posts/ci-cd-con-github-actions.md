@@ -1,55 +1,30 @@
-# CI/CD con GitHub Actions para proyectos estáticos
+# Atomic Design: o cómo dejé de tener un caos en mis diseños
 
-Un sitio estático parece que no necesita pipeline: subes los ficheros y listo.
-Pero `git push` a producción sin comprobaciones es un accidente esperando a
-pasar. Veamos cómo automatizarlo con GitHub Actions.
+Cuando empecé a diseñar interfaces, me pasaba algo súper común: me dejaba llevar por la emoción visual y terminaba con 15 botones distintos en un mismo proyecto, o cambiaba un color y tenía que ir pantalla por pantalla actualizándolo. Un dolor de cabeza total.
 
-## Qué construimos
+Hasta que descubrí el **Atomic Design** (Diseño Atómico). Más que una regla estricta, es una forma de pensar que me dio muchísima paz mental al momento de diseñar y, sobre todo, al pasar mis ideas a código. 
 
-Un pipeline de dos fases:
+La idea original es de Brad Frost, y su lógica es hermosa por lo simple que es: no intentes diseñar páginas enteras de golpe; mejor construye desde las piezas más chiquitas.
 
-1. **CI**: instala dependencias, ejecuta lint y corre los tests.
-2. **CD**: si la rama es `main`, construye y despliega.
+## Así es como funciona (de lo micro a lo macro)
 
-```yaml
-name: CI/CD
+### 1. Átomos 
+Piensa en los átomos como las piezas de Lego más pequeñitas. Es lo que ya no puedes dividir más sin que pierda sentido. Un color de tu paleta, la tipografía, un icono o un simple campo de texto. Solos no hacen gran cosa, pero son el ADN de tu diseño.
 
-on:
-  push:
-    branches: [main]
-  pull_request:
+### 2. Moléculas 
+Aquí la cosa toma forma. Si juntas un campo de texto, un icono de lupa y un botóncito. Tienes una barra de búsqueda. Las moléculas son simplemente grupitos de átomos trabajando juntos para cumplir una función.
 
-jobs:
-  quality:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test
+### 3. Organismos 
+Esto ya es un bloque grande y complejo de tu interfaz. Puede ser la barra de navegación completa (el header) o una tarjeta de producto con su foto, título, precio y botón de compra. Son secciones que ya tienen vida propia.
 
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    needs: quality
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm ci
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
+### 4. Plantillas (Templates) 
+Imagina que es el esqueleto de tu pantalla. Aquí acomodamos los organismos para ver la estructura, definir los espacios y asegurarnos de que la navegación sea intuitiva. En esta fase no nos distraemos con colores finales ni fotos reales, es puro diseño estructural (el famoso wireframe).
 
-## Por qué funciona
+### 5. Páginas 
+¡El resultado final! Es la plantilla pero ya inyectada con los textos reales, las imágenes definitivas y toda esa estética bonita que queremos lograr. Es exactamente lo que el usuario va a tocar y sentir.
 
-- **Cada PR se valida**: el fallo ocurre antes de tocar producción.
-- **Cero secretos**: `GITHUB_TOKEN` lo inyecta GitHub, no hay claves en el repo.
-- **Despliegue reproducible**: el build corre siempre en el mismo entorno.
+## ¿Por qué te comparto esto?
 
-El mismo patrón vale para cualquier stack. Lo importante no es la herramienta,
-sino la regla: **nada llega a producción sin pasar por el pipeline.**
+Porque si te gusta el UI/UX o el desarrollo Frontend, esta metodología te salva la vida. A mí me encanta que mis proyectos se vean súper estéticos y suaves, pero también necesito que mi código sea limpio. 
+
+Pensar en "átomos y moléculas" hace que, cuando abres tu editor de código, crear componentes reutilizables se sienta súper natural. Hacer interfaces bonitas es increíble, pero diseñarlas de forma inteligente para que no se rompan a futuro.

@@ -3,8 +3,8 @@
     "slug": "mi-primer-post",
     "title": "Mi primer post: por qué decidí escribir",
     "excerpt": "Las razones detrás de este blog: documentar lo que aprendo, enseñar mientras investigo y construir una red pública de conocimiento.",
-    "date": "2026-05-12",
-    "readTime": 4,
+    "date": "2026-09-15",
+    "readTime": 2,
     "tags": ["Bienvenida", "JavaScript"],
     "contentFile": "posts/mi-primer-post.md"
   },
@@ -12,18 +12,18 @@
     "slug": "css-grid-vs-flexbox",
     "title": "CSS Grid vs Flexbox: cuándo usar cada uno",
     "excerpt": "Una guía práctica para elegir entre las dos herramientas de layout más potentes de CSS: patrones y ejemplos de cada enfoque.",
-    "date": "2026-08-01",
+    "date": "2026-09-16",
     "readTime": 6,
     "tags": ["CSS", "Layout"],
     "contentFile": "posts/css-grid-vs-flexbox.md"
   },
   {
-    "slug": "ci-cd-con-github-actions",
-    "title": "CI/CD con GitHub Actions para proyectos estáticos",
-    "excerpt": "Cómo montar un pipeline de integración y despliegue continuo para un sitio estático: del push a producción sin fricción.",
-    "date": "2026-09-10",
+    "slug": "Atomic Dsesings",
+    "title": "Atomic Design",
+    "excerpt": "Cómo crear interfaces con Atomic Design.",
+    "date": "2026-09-16",
     "readTime": 7,
-    "tags": ["CI/CD", "DevOps", "GitHub"],
-    "contentFile": "posts/ci-cd-con-github-actions.md"
+    "tags": ["Frontend", "Figma"],
+    "contentFile": "posts/Atomic Dsesings.md"
   }
 ]

@@ -240,9 +240,9 @@ main {
   padding-top: var(--header-height);
 }
 
-/* ---------- Hero ---------- */
+/* ---------- hero---------- */
 .hero {
-  min-height: calc(100vh - var(--header-height));
+  min-height: calc(40vh - var(--header-height));
   display: flex;
   align-items: center;
   padding-block: var(--space-8);
@@ -279,6 +279,21 @@ main {
   max-width: var(--measure);
   color: var(--text-muted);
   font-size: var(--text-lg);
+}
+
+/* ---------- Hero del blog (container-narrow) ---------- */
+.hero.container-narrow {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.hero.container-narrow .hero-title {
+  font-size: clamp(3.5rem, 11vw, 7.5rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  color: var(--accent);
 }
 
 .hero-actions {
@@ -546,12 +561,38 @@ main {
 }
 
 /* ---------- Sección sobre mí ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: var(--space-8);
+  align-items: start;
+  margin-bottom: var(--space-8);
+}
+
+.about-figure {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.about-figure img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .about-text {
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
   max-width: var(--measure);
-  margin-bottom: var(--space-8);
 }
 
 .about-heading {
@@ -794,6 +835,12 @@ main {
   gap: var(--space-2);
 }
 
+/* ---------- Blog: recorte del margen inferior ---------- */
+body[data-page="blog"] #posts-list,
+body[data-page="blog"] #post-content {
+  padding-block-end: var(--space-5);
+}
+
 /* ---------- Lector de artículos ---------- */
 .back-link {
   margin-bottom: var(--space-5);
@@ -1007,6 +1054,16 @@ main {
 
   .hero-actions .btn {
     flex: 1;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .about-figure {
+    order: -1;
+    max-width: 24rem;
   }
 
   .skills-grid {
