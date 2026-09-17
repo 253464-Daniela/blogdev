@@ -1,6 +1,6 @@
 /* ============================================================
    Design tokens · Developer Portfolio
-   Dark mode por defecto · paleta clara via [data-theme="light"]
+   Tema claro pastel por defecto · tema espresso via [data-theme="dark"]
    ============================================================ */
 
 :root {
@@ -73,46 +73,61 @@
   --header-bg: color-mix(in srgb, var(--bg) 86%, transparent);
 
   /* ==========================================================
-     Tema oscuro (por defecto)
+     Tema oscuro (espresso/mocha)
      ========================================================== */
-  --bg: #0f1114;
-  --bg-elevated: #16181d;
-  --bg-muted: #1c1f25;
-  --text: #e7e9ec;
-  --text-muted: #989fac;
-  --text-faint: #6b7380;
-  --border: #252a33;
-  --border-strong: #333a45;
-  --accent: #f5a623;
-  --accent-strong: #ffbe3d;
-  --accent-contrast: #15170f;
-  --link: #f5a623;
+  --bg: #201a14;
+  --bg-elevated: #29221b;
+  --bg-muted: #332a21;
+  --text: #f2e8d5;
+  --text-muted: #bba892;
+  --text-faint: #907e6a;
+  --border: #403426;
+  --border-strong: #524234;
+  --accent: #e5a39a;
+  --accent-strong: #f0bcb4;
+  --accent-contrast: #2b1c18;
+  --accent-soft: #e7c175;
+  --link: #e5a39a;
+  --tag-bg: #332a21;
+  --tag-fg: #bba892;
+  --btn-bg: #8a6f5c;
+  --btn-bg-hover: #9a7d69;
+  --btn-fg: #f2e8d5;
   --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 45%, transparent);
-  --selection-bg: color-mix(in srgb, var(--accent) 85%, transparent);
+  --selection-bg: var(--accent-soft);
+  --selection-fg: #2b1e14;
 
   color-scheme: dark;
 }
 
 /* ============================================================
-   Tema claro
+   Tema claro (crema · café · pastel)
    ============================================================ */
 [data-theme="light"] {
-  --bg: #f7f7f5;
+  --bg: #fbf9f6;
   --bg-elevated: #ffffff;
-  --bg-muted: #efefe9;
-  --text: #1a1c1e;
-  --text-muted: #4c525c;
-  --text-faint: #6b7380;
-  --border: #e2e2dc;
-  --border-strong: #c9c9c1;
-  --accent: #b45309;
-  --accent-strong: #d97706;
+  --bg-muted: #f6f1ed;
+  --text: #0a192f;
+  --text-muted: #4a5568;
+  --text-faint: #7c8698;
+  --border: #d4af37;
+  --border-strong: #c49b2b;
+  --accent: #d81b60;
+  --accent-strong: #c01359;
   --accent-contrast: #ffffff;
-  --link: #b45309;
+  --accent-soft: #f8bbd0;
+  --link: #d81b60;
+  --tag-bg: #fce4ec;
+  --tag-fg: #d81b60;
+  --btn-bg: #d81b60;
+  --btn-bg-hover: #c01359;
+  --btn-fg: #ffffff;
+  --selection-bg: var(--accent-soft);
+  --selection-fg: #0a192f;
 
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
-  --shadow-md: 0 6px 16px rgb(0 0 0 / 0.08);
-  --shadow-lg: 0 16px 40px rgb(0 0 0 / 0.12);
+  --shadow-sm: 0 1px 2px rgb(10 25 47 / 0.08);
+  --shadow-md: 0 6px 16px rgb(10 25 47 / 0.1);
+  --shadow-lg: 0 16px 40px rgb(10 25 47 / 0.14);
 
   color-scheme: light;
 }

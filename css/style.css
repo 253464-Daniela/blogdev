@@ -57,11 +57,11 @@ a:hover {
 
 ::selection {
   background: var(--selection-bg);
-  color: var(--bg);
+  color: var(--selection-fg);
 }
 
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--link);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .section {
-  padding-block: var(--space-8);
+  padding-block: var(--space-9);
 }
 
 .eyebrow {
@@ -96,8 +96,8 @@ a:hover {
   left: var(--space-3);
   z-index: var(--z-skip);
   padding: var(--space-2) var(--space-4);
-  background: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
   font-weight: var(--weight-semibold);
   border-radius: var(--radius-md);
   transform: translateY(-400%);
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .nav-list a.is-active {
-  color: var(--accent);
+  color: var(--link);
 }
 
 /* ---------- Botón de tema ---------- */
@@ -251,7 +251,7 @@ main {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-  gap: var(--space-7);
+  gap: var(--space-8);
   align-items: center;
   width: 100%;
 }
@@ -301,8 +301,8 @@ main {
   padding: var(--space-2) var(--space-3);
   border: 1px solid var(--border);
   border-radius: var(--radius-full);
-  background: var(--bg-muted);
-  color: var(--text-muted);
+  background: var(--tag-bg);
+  color: var(--tag-fg);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   letter-spacing: 0.02em;
@@ -349,7 +349,7 @@ main {
   height: 0.5rem;
   flex-shrink: 0;
   border-radius: var(--radius-full);
-  background: #22c55e;
+  background: var(--accent-soft);
 }
 
 .status-dot::after {
@@ -357,7 +357,7 @@ main {
   position: absolute;
   inset: 0;
   border-radius: var(--radius-full);
-  background: #22c55e;
+  background: var(--accent-soft);
   opacity: 0.6;
   animation: pulse 1.8s var(--ease-out) infinite;
 }
@@ -405,13 +405,13 @@ main {
 
 .copy-btn:hover {
   color: var(--text);
-  border-color: var(--accent);
+  border-color: var(--link);
 }
 
 .copy-btn.is-copied {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--btn-fg);
 }
 
 .copy-label {
@@ -444,8 +444,8 @@ main {
 }
 
 .social-link:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--link);
+  border-color: var(--link);
   background: var(--bg-muted);
   text-decoration: none;
 }
@@ -475,12 +475,12 @@ main {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
 }
 
 .btn-primary:hover {
-  background: var(--accent-strong);
+  background: var(--btn-bg-hover);
 }
 
 .btn-ghost {
@@ -490,16 +490,16 @@ main {
 }
 
 .btn-ghost:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--link);
+  color: var(--link);
 }
 
 /* ---------- Secciones ---------- */
 .section-header {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  margin-bottom: var(--space-6);
+  gap: var(--space-3);
+  margin-bottom: var(--space-7);
 }
 
 .section-title {
@@ -516,11 +516,11 @@ main {
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  gap: var(--space-5);
+  gap: var(--space-6);
 }
 
 .feature-card {
-  padding: var(--space-5);
+  padding: var(--space-6);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-elevated);
@@ -549,9 +549,9 @@ main {
 .about-text {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-5);
   max-width: var(--measure);
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-8);
 }
 
 .about-heading {
@@ -566,14 +566,14 @@ main {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .skill-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  padding: var(--space-5);
+  gap: var(--space-4);
+  padding: var(--space-6);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-elevated);
@@ -611,14 +611,14 @@ main {
 #projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  gap: var(--space-5);
+  gap: var(--space-6);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  padding: var(--space-5);
+  gap: var(--space-4);
+  padding: var(--space-6);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-elevated);
@@ -685,21 +685,22 @@ main {
 .project-card-links a {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
+  color: var(--link);
 }
 
 /* ---------- Blog ---------- */
 #latest-posts-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  gap: var(--space-4);
-  margin-bottom: var(--space-5);
+  gap: var(--space-6);
+  margin-bottom: var(--space-7);
 }
 
 .latest-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  padding: var(--space-5);
+  gap: var(--space-3);
+  padding: var(--space-6);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-elevated);
@@ -742,7 +743,7 @@ main {
 }
 
 .post-card {
-  padding: var(--space-5);
+  padding: var(--space-6);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-elevated);
@@ -762,7 +763,7 @@ main {
 }
 
 .post-card-link:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .post-card-title {
@@ -892,21 +893,21 @@ main {
 }
 
 .copy-code-btn:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--link);
+  border-color: var(--link);
 }
 
 .copy-code-btn.is-copied {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-contrast);
+  background: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--btn-fg);
 }
 
 .post-body :not(pre) > code {
   padding: 0.125em 0.375em;
   border-radius: var(--radius-sm);
   background: var(--bg-muted);
-  color: var(--accent);
+  color: var(--link);
   font-family: var(--font-mono);
   font-size: 0.9em;
 }
@@ -940,7 +941,7 @@ main {
 }
 
 .footer-links a:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 /* ---------- Movimiento reducido ---------- */

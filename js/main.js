@@ -12,9 +12,8 @@
   };
 
   const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved === "light" || saved === "dark") {
-    applyTheme(saved);
-  }
+  const initial = saved === "light" || saved === "dark" ? saved : "light";
+  applyTheme(initial);
 
   toggle.addEventListener("click", () => {
     const next = root.dataset.theme === "light" ? "dark" : "light";

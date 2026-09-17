@@ -1,49 +1,19 @@
 # Mi primer post: por qué decidí escribir
 
-Empezar un blog técnico da vértigo. La red está llena de artículos, tutoriales
-y opiniones, así que la primera pregunta honesta es: **¿qué puedo aportar yo?**
+Somos seres muy visuales. Esa fue la conclusión a la que llegué un día mientras intentaba navegar por una página de gobierno que, estaba horrible. En ese momento pensé: **"Yo podría hacer esto mil veces mejor"**.
 
-Este post es la declaración de intenciones de este sitio. Sin humo.
+No me refería solo a que el sitio no fallara, sino a lograr que la experiencia se sintiera bien, que fuera fácil para el usuario y, sobre todo, que fuera estéticamente bonito. Así fue como el diseño UI/UX me atrapó. Este post es la declaración de intenciones de este sitio. Mi propio rinconcito personal.
 
 ## Las tres razones
 
-### 1. Aprender escribiendo
+### 1. Documentar mi camino
 
-Explicar un tema demuestra si lo entiendes de verdad. Cada vez que intento
-redactar una solución que parecía clara en mi cabeza, aparecen los huecos.
-Escribir es el mejor linter que conozco para el conocimiento.
+Me encanta compartir mi vida y organizar mis ideas creativas. Mientras avanzo en mi carrera en TI, quiero usar este blog para documentar mis pasos, descubrir lo que más me apasiona y tener un registro de cómo voy creciendo para verlo en un futuro.
 
-### 2. Devolver a la comunidad
+### 2. De mi mente a la web
 
-Llevo años resolviendo dudas con artículos de otras personas. Muchos de esos
-autores escribieron sin esperar nada a cambio. Este blog es mi forma de seguir
-el relevo.
+Aquí me imagino compartiendo un poco de todo: reflexiones sobre mi proceso de diseño, cosas que leo y cómo logro tomar una idea abstracta de mi cabeza para construirla y llevarla a la vida real en la web.
 
-### 3. Una nota mental pública
+### 3. Crear un archivo digital
 
-Cuando resuelvo un problema oscuro, suele volver a aparecer meses después. Con
-un artículo, la solución queda documentada, buscable y con contexto.
-
-## Un ejemplo de código
-
-Nada de este blog tendría sentido sin algo de código. Aquí va el clásico:
-
-```js
-function learn(publish) {
-  const notes = ["nunca", "deja", "de", "preguntar"];
-  if (publish) {
-    notes.unshift("escribe", "lo", "que", "aprendes");
-  }
-  return notes.join(" ");
-}
-
-console.log(learn(true)); // escribe lo que aprendes nunca deja de preguntar
-```
-
-## Cómo leer este blog
-
-Cada artículo incluye un resumen, el tiempo estimado de lectura y las
-categorías. Si una cita te hace ruido o crees que me equivoqué, escríbeme:
-la discusión técnica es parte del aprendizaje.
-
-Nos leemos en el siguiente post.
+Mi mayor meta es que cuando termines de leer un post, te sientas bien. Ya sea que te encante la programación y el diseño tanto como a mí, o que seas de mi familia y solo quieras saber en qué ando, quiero que este espacio te haga sentir como en casa y sientas que me conoces un poquito más.
